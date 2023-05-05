@@ -1,0 +1,25 @@
+{% load static %}
+<link rel="stylesheet" href="static/src/styles/stylesheet.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+
+<div class="testbox">
+  <h1>Registration</h1>
+
+  <form method="post">
+  {% csrf_token %}
+  <ul class="form__list">
+  
+  <li class="form__item">{{form.first_name}}</li>
+
+  <li class="form__item">{{form.second_name}}</li>
+
+  <li class="form__item">{{form.email}}</li>
+  
+  <li class="form__item">{{form.phonenumber}}</li>
+  
+  <button href="#" class="button">Register</button>
+  <span>{{ error }}</span>
+  </ul>
+  </form>
+</div>

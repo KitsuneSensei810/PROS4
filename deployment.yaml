@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: web
+spec:
+   containers:
+     - name: web
+       image: kitsunesensei810/pros4:latest
+       ports: 
+         - containerPort: 8000

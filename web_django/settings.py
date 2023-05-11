@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'composik',
         'USER': 'admin',
         'PASSWORD': 'admin',
-        'HOST': 'db',
+        'HOST': '10.0.2.15',
         'PORT': '3306',
     }
 }

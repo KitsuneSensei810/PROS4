@@ -18,6 +18,8 @@ spec:
           value: admin
       image: mariadb
       name: db
+      ip:
+        - containerIp: 10.244.0.58
       ports:
         - containerPort: 3306
       resources: {}

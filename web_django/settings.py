@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'composik',
         'USER': 'admin',
         'PASSWORD': 'admin',
-        'HOST': 'podIP',
+        'HOST': '10.244.0.65',
         'PORT': '3306',
     }
 }

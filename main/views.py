@@ -13,6 +13,7 @@ def index(request):
             subject_secondName = form.cleaned_data["second_name"]
             subject_number = form.data["phonenumber"]
             to_email = form.cleaned_data["email"]
+            subject_test_name = form.cleaned_data["test_name"]
             form.save()
             error = 'Вы успешно зарегистировались =)'
             

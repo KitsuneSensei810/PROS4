@@ -7,7 +7,6 @@ class main(models.Model):
     second_name = models.CharField('Пароль', max_length=15)
     phonenumber = models.CharField('Номер',max_length=12, unique=True)
     email = models.EmailField('Email', max_length=254, unique=True)
-    test = models.CharField('test_name', max_length=20, unique=True)
 
     def __str__(self):
         return self.first_name

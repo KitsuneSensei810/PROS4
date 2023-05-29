@@ -19,7 +19,6 @@ class Migration(migrations.Migration):
                 ('second_name', models.CharField(max_length=15, verbose_name='Пароль')),
                 ('phonenumber', models.CharField(max_length=12, unique=True, verbose_name='Номер')),
                 ('email', models.EmailField(max_length=254, unique=True, verbose_name='Email')),
-                ('test_name', models.EmailField(max_length=254, unique=True, verbose_name='Test_name')),
                 
             ],
             options={

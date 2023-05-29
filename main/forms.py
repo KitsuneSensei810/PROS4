@@ -5,7 +5,7 @@ from django.forms import EmailInput, ModelForm, TextInput
 class MainForm(ModelForm):
     class Meta:
         model = main
-        fields = ["first_name", "second_name", "phonenumber", "email", "test_name"]
+        fields = ["first_name", "second_name", "phonenumber", "email"]
         widgets = {
 
             "first_name": TextInput(attrs={
@@ -29,12 +29,6 @@ class MainForm(ModelForm):
             "phonenumber": TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Введите номер'
-
-            }),
-            
-            "test_name": TextInput(attrs={
-                'class': 'form-control',
-                'placeholder': 'Проверка базы',
 
             }),
 
